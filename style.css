@@ -1,0 +1,121 @@
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*@keyframes tabslide {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}*/
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    color: rgb(179, 179, 179);
+    text-shadow: 2px 2px black;
+}
+h3 {
+    color: rgb(214, 214, 214);
+    text-shadow: 1px 1px black;
+}
+#intro_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 175px;
+    object-fit: cover;
+    box-shadow: 0px 10px 17px 9px rgb(192 169 152);
+
+}
+#newrel {
+    width: 100vw;
+    text-align: center;
+}
+#newrel h2 {
+    text-shadow: 1px 1px rgb(143, 143, 143);
+}
+#cd {
+    animation: spin 7.5s linear infinite;
+}
+#drum_set:hover {
+    animation: spin .5s linear infinite reverse;
+}
+#drum_set {
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    left: 47vw;
+    top: 370px;
+}
+#sidebar {
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+#sidebar #tab {
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+#sidebar #tab img {
+    position: relative;
+    top: 5px;
+    width: 90px;
+    height: 90px;
+    filter: invert();
+}
+#sidebar #content {
+    position: relative;
+    top: -10px;
+    width: 100px;
+    height: 500px;
+    background-color: rgb(26, 26, 26);
+    transform: translateX(-150px);
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    
+}
+#sidebar:hover #content{
+    transform: translateX(0);
+}
+#sidebar #content img {
+    width: 100px;
+    height: 75px;
+}
+a {
+    color: rgb(15, 191, 226);
+}
+#aboutHR {
+    text-align: center;
+    background-image: url("Heavy_Rain_GIF.gif");
+}
+#aboutHR h2 {
+    text-shadow: 2px 2px 2px rgb(191, 191, 191);
+}
+#aboutHR p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#ghexp_pic {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,21 @@
+@keyframes cum {
+    from {border-width: 15px;}
+    to {border-width: 1px;}
+}
+body {
+    background: linear-gradient(rgb(0,0,58), rgb(0,0,108));
+    color: white;
+    text-align: center;
+}
+a{
+    color: red;
+}
+form {
+    text-align: center;
+}
+img {
+    visibility: hidden;
+    animation: cum 1s ease-in-out infinite alternate;
+    border: 15px solid white;
+    border-radius: 10%;
+}
